@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia's Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    </head>
+    <style>
+        header{
+          background-color: #708090;
+          /* background: url(images/cyber.jpg); */
+          background-size: cover;
+          background-position: center;
+          min-height: 1000px;
+        }
+        @media screen and (max-width: 670px){
+          header{
+            min-height: 500px;
+          }
+        }
+
+        
+
+        .tabs .indicator{
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        .img-size{
+          width: 50px;
+          height: 50px;
+          margin-top: 10px;
+        }
+
+        .carousel{
+          margin-bottom: 5%;
+          height: 900px;
+          width: 100%;
+          perspective: 800px;
+        }
+        .carousel .carousel-item{
+          width: 400px;
+        }
+        .carousel .carousel-item img{
+          width: 100%;
+        }
+        .header-img{
+          margin-top: 20%;
+          
+        }
+
+        .img{
+          height: 100%;
+          width: 100%;
+        }
+      
+      </style>
+<body style="background-color: rebeccapurple;">
+    <header>
+        <nav class="nav-wrapper transparent">
+          <div class="container">
+            <div class="row">
+              <div class="col s12 m12 l12 xl12">
+                <span><img src="images/tsun profile.jpg" alt="" class="circle responsive-img img-size hide-on-med-and-down"></span><a href="#" class="brand-logo">Sophia's Works</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#certs">Certificates</a></li>
+                  <li><a href="#system">Systems</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                  <li><a href="#gallery">Gallery</a></li>
+                  <li><a href="#certs">Certificates</a></li>
+                  <li><a href="#system">Systems</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col s4 l4 m4 xl4 header-img">
+              <img src="images/myprofile.jpg" class="responsive-img" alt="">
+            </div>
+            <div class="col s8 l8 m8 xl8 header-img">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m12 l12 xl12">
+                    <h1 class="white-text ">Hello I'm <span class="orange-text">Sophia</span></h1>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m12 l12 xl12 center-align">
+                      <h5 class="white-text">
+                        And I’m a aspiring sowftware
+                        
+                        engineer.Currently Im in 3rd year College 
+                        taking Diploma in Information 
+                        Communication Technology,in 
+                        Polytechnic University of the Philippines
+                        and planing to continue it to Bachelor of Science in 
+                        Information Technology.
+                  
+                        Aside Programming I’am Also interested in drawing 
+                        and making chracter designs.
+                      </h5>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </header>
+
+       
+  <div class="scrollspy" id="gallery">
+    <div class="carousel center">
+      <h1 class="white-text center">My Digital Drawings</h1>
+      <a class="carousel-item" href="#one!"><img src="images/Rin new Design1.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#two!"><img src="images/lin character design 2.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#three!"><img src="images/Beatrice Character Design.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#four!"><img src="images/Katherine Character Design.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#five!"><img src="images/kenma ne character design.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#six!"><img src="images/Drake Character Design.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#seven!"><img src="images/Ava Gunderie.jpg" alt="" class="materialboxed"></a>
+      <a class="carousel-item" href="#seven!"><img src="images/confession.png" alt="" class="materialboxed"></a>
+    </div>
+  </div>
+    
+  
+ 
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/street.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  
+  <section class="section container scrollspy" id="certs">
+    <h1 class="orange-text center">My Certificates</h1>
+    <div class="carousel carousel-slider center">
+      <div class="carousel-item red white-text" href="#one!">
+        <img src="images/cert10.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#two!">
+        <img src="images/cert9.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#three!">
+        <img src="images/cert8.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#four!">
+        <img src="images/cert7.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#five!">
+        <img src="images/cert6.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#six!">
+        <img src="images/cert5.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#seven!">
+        <img src="images/cert4.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#eight!">
+        <img src="images/cert3.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#nine!">
+        <img src="images/cert2.jpg" alt="" class="materialboxed">
+      </div>
+      <div class="carousel-item red white-text" href="#ten!">
+        <img src="images/cert1.jpg" alt="" class="materialboxed">
+      </div>
+    </div>
+    <div>
+          <div>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12">
+                <h1 class="orange-text center scrollspy" id="system">My System Projects</h1>
+                <video class="responsive-video" controls>
+                  <source src="images/demo.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12 center">
+                <h1 class="orange-text center">Ai Art</h1>
+                <div class="white-text">
+                  <h4>A web based application for posting art projects of artist and selling thier works and services.
+                    This is my second project that I work with when I’m in 2nd year collegel</h4>
+                </div>
+              </div>
+              <div class="col s12 m12 l12 xl12 center">
+                <a href="https://github.com/Mellea-Dev/Ai_Art" class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Source Code</a>
+              </div>
+            </div>  
+          </div> 
+          <div>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12">
+                <img src="images/ec.jpg" alt="" class="materialboxed img">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12 l12 xl12 center">
+                <h1 class="orange-text center">Elderly Care</h1>
+                <div class="white-text">
+                  <h4>
+                    A web based Management System for Home for the Aged.
+                    This is a group project that I work with when I’m in  senior highschool
+                  </h4>
+                 
+                </div>
+              </div>
+            </div> 
+          </div>  
+    </div>
+    
+  </section>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="images/sky.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  
+  <section class="section container scrollspy" id="contact">
+    <div class="row">
+      <h2 class="orange-text center">Get in Touch</h2>
+      <div class="col s6 l6 m6 lx16">
+        <a href="https://www.facebook.com/TsunChan15">
+          <h4 class="white-text"><i class="fab fa-facebook"></i>TsunChan</h4>
+        </a>
+         
+      </div>
+      <div class="col s6 l6 m6 lx6">
+        <a href="https://twitter.com/HelloTsunTsun">
+          <h4 class="white-text"><i class="fab fa-twitter"></i>TsunChan</h4>
+        </a>
+        
+         
+      </div>
+     
+     
+    </div>
+  </section>
+
+ 
+<script>
+$(document).ready(function(){
+
+    $('.sidenav').sidenav();
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+    $('.tabs').tabs();
+    $('.carousel').carousel();
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+
+});
+</script>     
+</body>
+</html>
